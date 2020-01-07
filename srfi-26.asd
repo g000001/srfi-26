@@ -3,6 +3,12 @@
 (cl:in-package :asdf)
 
 (defsystem :srfi-26
+  :version "20200108"
+  :description "SRFI 26: cut, cute"
+  :long-description "SRFI 26: Notation for Specializing Parameters without Currying"
+  :author "Al Petrofsky"
+  :maintainer "CHIBA Masaomi"
+  :license "Unlicense"
   :serial t
   :depends-on (:mbe)
   :components ((:file "package")
@@ -18,6 +24,12 @@
         (rename-package name name `(,nickname)))))
 
 (defsystem :srfi-26.test
+  :version "20200108"
+  :description "SRFI 26: cut, cute"
+  :long-description "SRFI 26: Notation for Specializing Parameters without Currying"
+  :author "Al Petrofsky"
+  :maintainer "CHIBA Masaomi"
+  :license "Unlicense"
   :serial t
   :depends-on (:mbe :srfi-26 :fiveam)
   :components ((:file "test")))
