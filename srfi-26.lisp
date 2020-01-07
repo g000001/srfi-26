@@ -36,7 +36,7 @@
 ;     combination : procedure being specialized, followed by its arguments
 ;     se          : slots-or-exprs, the qualifiers of the macro
 
-(cl:in-package :srfi-26-internal)
+(cl:in-package "https://github.com/g000001/srfi-26#internals")
 
 (define-syntax srfi-26-internal-cut
   (syntax-rules (<> <...>)

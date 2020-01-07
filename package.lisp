@@ -2,11 +2,12 @@
 
 (cl:in-package :cl-user)
 
-(defpackage :srfi-26
+(defpackage "https://github.com/g000001/srfi-26"
   (:use)
-  (:export :cut :cute :<> :<...>))
+  (:export cut cute <> <...>))
 
-(defpackage :srfi-26-internal
-  (:use :srfi-26 :cl :fiveam
-        :mbe))
+(defpackage "https://github.com/g000001/srfi-26#internals"
+  (:use "https://github.com/g000001/srfi-26"
+        cl
+        mbe))
 
